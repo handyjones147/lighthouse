@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Composer</title>
+    <title>Alliance Trust Shipping Company</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -17,9 +17,11 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body><!-- NAVBAR -->
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -28,11 +30,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="#">ATSC</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <!-- <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link</a></li>
         <li><a href="#">Link</a></li>
         <li class="dropdown">
@@ -47,16 +49,19 @@
             <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
+      </ul> -->
+      <!-- <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      </form> -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#track">Quick Track</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
@@ -65,7 +70,7 @@
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
           </ul>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
@@ -109,7 +114,8 @@
   <a class="right carousel-control" href="#carousel-top" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
-</div><div class="container">
+</div>
+<div class="container" id="services">
   <div class="row">
     <div class="col-lg-4">
       <img class="img-circle img-responsive center-block" alt="140x140" src="http://lorempixel.com/140/140/nature" />
@@ -138,31 +144,8 @@
       </p>
     </div>
   </div>
-</div><div class="container">
-  <div class="row">
-    <div class="col-lg-5">
-      <h2>An other example of Two Columns</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-      <a class="btn btn-default btn-lg" href="#">View details &raquo;</a>
-    </div>
-     <div class="col-lg-7">
-      <iframe width="100%" height="360" src="http://www.youtube.com/embed/8Cv3kwMfuLg" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-</div><div class="container">
-  <div class="row">
-    <div class="col-lg-7">
-      <iframe width="100%" height="360" src="http://www.youtube.com/embed/8Cv3kwMfuLg" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="col-lg-5">
-      <h2>An other example of Two Columns</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-      <a class="btn btn-default btn-lg" href="#">View details &raquo;</a>
-    </div>
-  </div>
-</div><div class="container">
+</div>
+<div class="container" id="track">
   <div class="row">
     <div class="col-sm-5">
       <h3>Your Company</h3>
@@ -196,7 +179,33 @@
       </div>
     </div>
   </div>
+</div>
+<div class="container" id="about">
+  <div class="row">
+    <div class="col-lg-5">
+      <h2>An other example of Two Columns</h2>
+      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+      <a class="btn btn-default btn-lg" href="#">View details &raquo;</a>
+    </div>
+     <div class="col-lg-7">
+      <iframe width="100%" height="360" src="http://www.youtube.com/embed/8Cv3kwMfuLg" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
 </div><div class="container">
+  <div class="row">
+    <div class="col-lg-7">
+      <iframe width="100%" height="360" src="http://www.youtube.com/embed/8Cv3kwMfuLg" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="col-lg-5">
+      <h2>An other example of Two Columns</h2>
+      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+      <a class="btn btn-default btn-lg" href="#">View details &raquo;</a>
+    </div>
+  </div>
+</div>
+<div class="container" id="contact">
   <div class="row">
     <h1 class="text-center">Contact Us</h1>
     <hr />
@@ -227,13 +236,6 @@
         <a href="#"><img src="./img/social/Facebook.png" alt="" /></a>
         <a href="#"><img src="./img/social/Twitter.png" alt="" /></a>
         <a href="#"><img src="./img/social/Google+.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Pinterest.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Linkedin.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Myspace.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Dribbble.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Youtube.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Flickr.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Tumblr.png" alt="" /></a>
       </p>
     </div>
   </div>
@@ -241,6 +243,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <div class="row"><div class="col-md-12"><p class="text-center"><a href="http://www.dragsponsive.com" target="_blank">powered by dragsponsive.com</a></p></div></div>
+  <div class="row"><div class="col-md-12"><p class="text-center"><a href="http://www.dragsponsive.com" target="_blank">powered by the alliance trust company </a></p></div></div>
   </body>
 </html>
