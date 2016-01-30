@@ -23,17 +23,18 @@ $(document).ready(function() {
     }
   });
 
-  var message = 'Name: ' + '\nPackage: ' + '\nCurrent Location:' + '\nNext Destination: ';
+  var trackingNumber = 'ATSC01882767DE';
+  var message = 'Name: Somebody Nobody ' + '\nPackage: Cargo and truck' + '\nCurrent Location: United kingdom enroute dubai' + '\nNext Destination: Dubai';
 
   //tracking algorithm
-  $('#track').unbind().click(function(evt) {
+  $('#track').click(function(evt) {
     evt.preventDefault();
     console.log('track');
     var statusMessage = $("#status_message");
     // check the value of textbox
     var trackingNum = $('#tracking_num');
     console.log(trackingNum.val(), 'track_num');
-    if(trackingNum.val() === '' || trackingNum.val() === undefined || trackingNum.val().length < 6) {
+    if(trackingNum.val() === '' || trackingNum.val() === undefined || trackingNum.val() !== trackingNumber) {
       // console.log('got here');
       statusMessage.val('Please, provide a valid tracking number.');
     }
