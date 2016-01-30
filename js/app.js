@@ -24,7 +24,7 @@ $(document).ready(function() {
   });
 
   var trackingNumber = 'ATSC01882767DE';
-  var message = 'Name: Somebody Nobody ' + '\nPackage: Cargo and truck' + '\nCurrent Location: United kingdom enroute dubai' + '\nNext Destination: Dubai';
+  var message = 'Name: Somebody Nobody ' + '\nGoods: Package' + '\nCurrent Location: United kingdom enroute Dubai' + '\nNext Destination: Dubai';
 
   //tracking algorithm
   $('#track').click(function(evt) {
