@@ -22,4 +22,23 @@ $(document).ready(function() {
       }
     }
   });
+
+  var message = 'Name: ' + '\nPackage: ' + '\nCurrent Location:' + '\nNext Destination: ';
+
+  //tracking algorithm
+  $('#track').unbind().click(function(evt) {
+    evt.preventDefault();
+    console.log('track');
+    var statusMessage = $("#status_message");
+    // check the value of textbox
+    var trackingNum = $('#tracking_num');
+    console.log(trackingNum.val(), 'track_num');
+    if(trackingNum.val() === '' || trackingNum.val() === undefined || trackingNum.val().length < 6) {
+      // console.log('got here');
+      statusMessage.val('Please, provide a valid tracking number.');
+    }
+    else {
+      statusMessage.val(message);
+    }
+  });
 });
