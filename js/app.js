@@ -1,4 +1,9 @@
+$(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+});
+
 $(document).ready(function() {
+  // $(this).scrollTop(0);
   $('nav a[href*=#]:not([href=#])').click(function() {
     console.log("clicked");
     // var current = $("nav").find(".nav-active");
@@ -17,7 +22,7 @@ $(document).ready(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top - 115
-        }, 2000);
+        }, 1000);
         return false;
       }
     }
