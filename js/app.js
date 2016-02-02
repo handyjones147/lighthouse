@@ -30,13 +30,13 @@ $(document).ready(function() {
 
   var statusMessage = $("#status_message");
   var trackingNumber = 'ATSC01882767DE';
-  var message = 'Name: Lin Lin Ping ' + '\nGoods: Package/Personal belongings' + '\nCurrent Location: United kingdom enroute Dubai' + '\nNext Destination: Dubai';
+  var message = 'TrackingID: ATSC01882767DE' + '\nName: Lin Lin Ping ' + '\nGoods: Package/Personal belongings' + '\nCurrent Location: United kingdom enroute Dubai' + '\nNext Destination: Dubai';
 
   //tracking algorithm
   $('#track').click(function(evt) {
     evt.preventDefault();
     console.log('track');
-    statusMessage.val('Loading...');
+    statusMessage.val('Loading your tracking info, please wait...');
     statusMessage.hide();
     
     // check the value of textbox
