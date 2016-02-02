@@ -44,9 +44,8 @@ $(document).ready(function() {
     console.log(trackingNum.val(), 'track_num');
     if(trackingNum.val() === '' || trackingNum.val() === undefined || trackingNum.val() !== trackingNumber) {
       // console.log('got here');
-      statusMessage.show(1000, function() {
-        statusMessage.val('Please, provide a valid tracking number.');
-      });
+      statusMessage.show();
+      statusMessage.val('Please, provide a valid tracking number.');
       
       
     }
