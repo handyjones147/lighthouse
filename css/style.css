@@ -1,3 +1,11 @@
+body {
+  background-color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: cadetblue;
+}
+
 .navbar {
 	margin-bottom: 0;
 }
@@ -11,4 +19,41 @@
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 70px;
+}
+#services img {
+  max-width: 120px;
+}
+#tracking {
+  background-color: darkgray;
+  padding: 45px;
+  border-radius: 8px;
+}
+#tracking h3 {
+  color: darkgreen;
+}
+
+#about {
+  background-color: #fff;
+  padding: 45px;
+  border-radius: 8px;
+}
+.service1 {
+  background-color: bisque;
+  padding: 27px;
+  
+}
+
+.service2 {
+  background-color: darkgray;
+  padding: 27px;
+}
+
+.service3 {
+  background-color: burlywood;
+  padding: 27px;
+}
+
+.service1:hover, .service2:hover, .service3:hover {
+  background-color: #333;
+  color: #fff;
 }
