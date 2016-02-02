@@ -57,3 +57,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #333;
   color: #fff;
 }
+
+.contact-info {
+  text-decoration: none;
+  list-style: none;
+}
+
+.info {
+  font-size: 2em;
+  color: seagreen;
+  margin-right: 5px; 
+}

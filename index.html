@@ -8,7 +8,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,7 +30,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#carousel-top">ATSC</a>
+      <a class="navbar-brand" href="#carousel-top">Alliance Trust Shipping Company</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -95,7 +95,7 @@
       <img src="./img/air_cargo.png" alt="...">
       <div class="carousel-caption">
         <h1>Fast Delivery Services</h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <p> If you have to get your important documents and packages to their destination on time and intact, we provide local courier service for the pick up and delivery of your time sensitive packages and documents. We get your shipments to their destination safely and on time.</p>
       </div>
     </div>
 
@@ -155,11 +155,25 @@
     <div class="col-sm-5">
       <h3>Schedule a shipment</h3>
       <br />
-      <address>
-        <strong>Email:</strong> <a href="mailto:#"> enquiry@alliancetrustsc.com</a><br><br>
-        <strong>Mobile:</strong> +447087662289<br><br>
-        <strong>Address:</strong> SC HOUSE, VANWALL ROAD, MAIDENHEAD,BERKSHIRE, SL64UW, UNITED KINGDOM<br><br>
-      </address>
+      <div class="container">
+        <div class="">
+          <div class="pull-left"><span class="info glyphicon glyphicon-envelope"></span></div>
+          <div class="pull-left">  :  <a href="mailto:enquiry@alliancetrustsc.com"> enquiry@alliancetrustsc.com</a></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="pull-left"><span class="info glyphicon glyphicon-earphone"></span></div>
+        <div class="pull-left">  :  <a href="tel:07036412212"> +447087662289</a></div>
+      </div>
+      <div class="container">
+        <div class="pull-left"><span class="info glyphicon glyphicon-earphone"></span>: </div>
+        <div class="pull-left col-sm-4"> SC HOUSE, VANWALL ROAD, MAIDENHEAD,BERKSHIRE, SL64UW, UNITED KINGDOM</div>
+      </div>
+      <!-- <address> -->
+        <!-- <span class="info glyphicon glyphicon-envelope"></span> : <a href="enquiry@alliancetrustsc.com">enquiry@alliancetrustsc.com</a><br><br>
+        <span class="info glyphicon glyphicon-earphone"></span> : <a href="tel:07036412212"> +447087662289</a><br><br>
+        <strong>Address:</strong> SC HOUSE, VANWALL ROAD, MAIDENHEAD,BERKSHIRE, SL64UW, UNITED KINGDOM<br><br> -->
+      <!-- </address> -->
     </div>
 
     <div class="col-sm-7">
@@ -173,7 +187,7 @@
             <button id="track" class="btn btn-primary btn-block" type="submit">Track</button>
           </div>
         </div>
-        <textarea class="form-control" id="status_message" name="message" placeholder="Status" rows="5"></textarea>
+        <textarea class="form-control" id="status_message" name="message" placeholder="Status" rows="5" readonly></textarea>
         <div class="row">
           <div class="col-xs-12 col-md-12 form-group">
             <!-- <button class="btn btn-primary btn-block" type="submit">Send</button> -->

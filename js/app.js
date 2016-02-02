@@ -28,23 +28,34 @@ $(document).ready(function() {
     }
   });
 
+  var statusMessage = $("#status_message");
   var trackingNumber = 'ATSC01882767DE';
-  var message = 'Name: Somebody Nobody ' + '\nGoods: Package/Personal belongings' + '\nCurrent Location: United kingdom enroute Dubai' + '\nNext Destination: Dubai';
+  var message = 'Name: Lin Lin Ping ' + '\nGoods: Package/Personal belongings' + '\nCurrent Location: United kingdom enroute Dubai' + '\nNext Destination: Dubai';
 
   //tracking algorithm
   $('#track').click(function(evt) {
     evt.preventDefault();
     console.log('track');
-    var statusMessage = $("#status_message");
+    statusMessage.val('Loading...');
+    statusMessage.hide();
+    
     // check the value of textbox
     var trackingNum = $('#tracking_num');
     console.log(trackingNum.val(), 'track_num');
     if(trackingNum.val() === '' || trackingNum.val() === undefined || trackingNum.val() !== trackingNumber) {
       // console.log('got here');
-      statusMessage.val('Please, provide a valid tracking number.');
+      statusMessage.show(1000, function() {
+        statusMessage.val('Please, provide a valid tracking number.');
+      });
+      
+      
     }
     else {
-      statusMessage.val(message);
+      statusMessage.show(4000, function() {
+        statusMessage.val(message);  
+      });
+      
+      
     }
   });
 });
