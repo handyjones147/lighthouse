@@ -30,7 +30,7 @@ $(document).ready(function() {
 
   var statusMessage = $("#status_message");
   var trackingNumber = 'ATSC01882767DE';
-  var message = 'TrackingID: ATSC01882767DE' + '\nName: Lin Lin Ping ' + '\nGoods: Package/Personal belongings' + '\nCurrent Location: United kingdom enroute Dubai' + '\nNext Destination: Dubai';
+  var message = 'TrackingID: ATSC01882767DE' + '\nName: Lin Lin Ping ' + '\nGoods: Personal belongings' + '\nFrom: United kingdom' + '\nTo: China' + '\nCurrent location: Enroute Dubai airport';
 
   //tracking algorithm
   $('#track').click(function(evt) {
