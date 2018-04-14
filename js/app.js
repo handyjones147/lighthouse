@@ -30,7 +30,7 @@ $(document).ready(function() {
 
   var statusMessage = $("#status_message");
   var trackingNumber = 'ATSC01882767MA';
-  var message = 'TrackingID: ATSC01882767DE' + '\nName: Liu Meiling ' + '\nAddress: 中国 山东省 烟台市 蓬莱市锦绣家园16-2-102' + '\nFrom: United kingdom' + '\nTo: China' + '\nCurrent location: Enroute Dubai airport';
+  var message = 'TrackingID: ATSC01882767MA' + '\nName: Liu Meiling ' + '\nAddress: 中国 山东省 烟台市 蓬莱市锦绣家园16-2-102' + '\nFrom: United kingdom' + '\nTo: China' + '\nCurrent location: Enroute Dubai airport';
 
   //tracking algorithm
   $('#track').click(function(evt) {
