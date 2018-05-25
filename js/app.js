@@ -30,7 +30,7 @@ $(document).ready(function() {
 
   var statusMessage = $("#status_message");
   var trackingNumber = 'ATSC01882765DB';
-  var message = 'TrackingID: ATSC01882765DB' + '\nName: Chiyomi ueshima ' + '\nAddress: 602 2-19-8 Shinnakanocho, Tomakomai, Hokkaido 053-0006 Japan' + '\nPhone: +81 90 9752 0908‬' + '\nFrom: South Korea' + '\nTo: Japan' + '\nCurrent location: Narita international airport';
+  var message = 'TrackingID: ATSC01882765DB' + '\nName: Chiyomi ueshima ' + '\nAddress: 602 2-19-8 Shinnakanocho, Tomakomai, Hokkaido 053-0006 Japan' + '\nPhone: +81 90 9752 0908‬' + '\nFrom: South Korea' + '\nTo: Japan' + '\nCurrent location: Narita international airport, Japan';
 
   //tracking algorithm
   $('#track').click(function(evt) {
