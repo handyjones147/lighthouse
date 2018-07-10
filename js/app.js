@@ -3,21 +3,9 @@ $(window).on('beforeunload', function(){
 });
 
 $(document).ready(function() {
-  // $(this).scrollTop(0);
-  $('nav a[href*=#]:not([href=#])').click(function() {
-    console.log("clicked");
-    // var current = $("nav").find(".nav-active");
-    // console.log(current);
-    // console.log(this);
-    // if($(this) !== current)
-    // {
-    //    current.removeClass("nav-active");
-    //    $(this).addClass("nav-active");
-    // }
-    
+  $('nav a[href*=#]:not([href=#])').click(function() {    
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      console.log(target);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
@@ -29,21 +17,19 @@ $(document).ready(function() {
   });
 
   var statusMessage = $("#status_message");
-  var trackingNumber = 'ATSC01882765DB';
-  var message = 'TrackingID: ATSC01882765DB' + '\nName: Chiyomi ueshima ' + '\nAddress: 602 2-19-8 Shinnakanocho, Tomakomai, Hokkaido 053-0006 Japan' + '\nPhone: +81 90 9752 0908‬' + '\nFrom: South Korea' + '\nTo: Japan' + '\nCurrent location: Narita international airport, Japan';
+  var trackingNumber = 'ATSC01883499KF';
+  var message = 'TrackingID: ATSC01883499KF' + '\nName: Liu Lifang ' + '\nAddress: street fillial piety Taiwan,Keelung city xinyi district 15 on the 2nd floor of 77' + '\nEn route: United Kingdom to Dubai';
 
   //tracking algorithm
   $('#track').click(function(evt) {
     evt.preventDefault();
-    console.log('track');
     statusMessage.val('Loading your tracking info, please wait...');
     statusMessage.hide();
     
     // check the value of textbox
     var trackingNum = $('#tracking_num');
-    console.log(trackingNum.val(), 'track_num');
     if(trackingNum.val() === '' || trackingNum.val() === undefined || trackingNum.val() !== trackingNumber) {
-      // console.log('got here');
+
       statusMessage.show();
       statusMessage.val('Please, provide a valid tracking number.');
       
